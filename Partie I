@@ -26,7 +26,7 @@ int main(void) {
         {
             for(j=n/2+1;j<2*n-1-(n/2+1);j++)
                 {
-                    if(P[i][j]!=0) // if(((i+j)>=n-1)&&(i+j)%2==0)
+                    if(P[i][j]!=0) // if((j+i>=n-1)&&(j-i<=n-1)&&(j%2==i%2))
                     {
                         //On peut affecter les 3 quadrants
                         //En utilisant un seul parcours
